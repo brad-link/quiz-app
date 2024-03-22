@@ -10,10 +10,6 @@ import { promises as fs } from 'fs';
 export default async function Home() {
   const file = await fs.readFile(process.cwd() + '/app/questions.json', 'utf-8');
   const quizData = JSON.parse(file);
-  // const  getQuiz = (title) => {
-  //   const quiz = await LoadQuizData(title);
-  //   return quiz;
-  // }
   return (
     <div className={styles.startPage}>
       <h1>Select a quiz</h1>

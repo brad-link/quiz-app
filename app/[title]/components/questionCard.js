@@ -7,7 +7,7 @@ export default function QuestionCard({ quizKey, Question, nextQuestion }) {
     const [currentAnswers, setCurrentAnswers] = useState([]);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     useEffect(() => {
-        // localStorage.removeItem(quizKey);
+        localStorage.removeItem(quizKey);
         console.log(quizKey);
         const answers = JSON.parse(localStorage.getItem(quizKey) || '[]');
         console.log(JSON.parse(localStorage.getItem(quizKey)));

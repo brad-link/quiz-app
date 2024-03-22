@@ -55,186 +55,156 @@
         {
             "question": "What is the highest grossing film of all time?",
             "correct_answer": "A",
-            "answers": [
-                {
-                    "A": "Avatar",
-                    "B": "Titanic",
-                    "C": "Star Wars: The Force Awakens",
-                    "D": "Jurassic World"
-                }
-            ]
+            "answers": {
+                "A": "Avatar",
+                "B": "Titanic",
+                "C": "Star Wars: The Force Awakens",
+                "D": "Jurassic World"
+            }
         },
         {
             "question": "What is the name of the hobbit played by Elijah Wood in the Lord of the Rings movies?",
             "correct_answer": "C",
-            "answers": [
-                {
-                    "A": "Frodo",
-                    "B": "Sam",
-                    "C": "Frodo",
-                    "D": "Merry"
-                }
-            ]
+            "answers": {
+                "A": "Frodo",
+                "B": "Sam",
+                "C": "Frodo",
+                "D": "Merry"
+            }
         },
         {
             "question": "What is the name of the skyscraper in Die Hard?",
             "correct_answer": "B",
-            "answers": [
-                {
-                    "A": "Nakatomi Plaza",
-                    "B": "Nakatomi Plaza",
-                    "C": "Nakatomi Plaza",
-                    "D": "Nakatomi Plaza"
-                }
-            ]
+            "answers": {
+                "A": "Nakatomi Plaza",
+                "B": "Nakatomi Plaza",
+                "C": "Nakatomi Plaza",
+                "D": "Nakatomi Plaza"
+            }
         },
         {
             "question": "What is the name of the actor who plays the character of Harry Potter?",
             "correct_answer": "A",
-            "answers": [
-                {
-                    "A": "Daniel Radcliffe",
-                    "B": "Rupert Grint",
-                    "C": "Tom Felton",
-                    "D": "Matthew Lewis"
-                }
-            ]
+            "answers": {
+                "A": "Daniel Radcliffe",
+                "B": "Rupert Grint",
+                "C": "Tom Felton",
+                "D": "Matthew Lewis"
+            }
         },
         {
             "question": "What is the name of the actor who plays the character of Harry Potter?",
             "correct_answer": "A",
-            "answers": [
-                {
-                    "A": "Daniel Radcliffe",
-                    "B": "Rupert Grint",
-                    "C": "Tom Felton",
-                    "D": "Matthew Lewis"
-                }
-            ]
+            "answers": {
+                "A": "Daniel Radcliffe",
+                "B": "Rupert Grint",
+                "C": "Tom Felton",
+                "D": "Matthew Lewis"
+            }
         }
     ],
     "Sports": [
         {
             "question": "What is the national sport of Japan?",
             "correct_answer": "B",
-            "answers": [
-                {
-                    "A": "Sumo",
-                    "B": "Judo",
-                    "C": "Karate",
-                    "D": "Kendo"
-                }
-            ]
+            "answers": {
+                "A": "Sumo",
+                "B": "Judo",
+                "C": "Karate",
+                "D": "Kendo"
+            }
         },
         {
             "question": "What is the highest belt you can get in Taekwondo?",
             "correct_answer": "C",
-            "answers": [
-                {
-                    "A": "Black",
-                    "B": "Red",
-                    "C": "Black",
-                    "D": "Green"
-                }
-            ]
+            "answers": {
+                "A": "Black",
+                "B": "Red",
+                "C": "Black",
+                "D": "Green"
+            }
         },
         {
             "question": "What is the diameter of a basketball hoop in inches?",
             "correct_answer": "A",
-            "answers": [
-                {
-                    "A": "18 inches",
-                    "B": "20 inches",
-                    "C": "16 inches",
-                    "D": "22 inches"
-                }
-            ]
+            "answers": {
+                "A": "18 inches",
+                "B": "20 inches",
+                "C": "16 inches",
+                "D": "22 inches"
+            }
         },
         {
             "question": "What is the diameter of a basketball hoop in inches?",
             "correct_answer": "A",
-            "answers": [
-                {
-                    "A": "18 inches",
-                    "B": "20 inches",
-                    "C": "16 inches",
-                    "D": "22 inches"
-                }
-            ]
+            "answers": {
+                "A": "18 inches",
+                "B": "20 inches",
+                "C": "16 inches",
+                "D": "22 inches"
+            }
         },
         {
             "question": "What is the diameter of a basketball hoop in inches?",
             "correct_answer": "A",
-            "answers": [
-                {
-                    "A": "18 inches",
-                    "B": "20 inches",
-                    "C": "16 inches",
-                    "D": "22 inches"
-                }
-            ]
+            "answers": {
+                "A": "18 inches",
+                "B": "20 inches",
+                "C": "16 inches",
+                "D": "22 inches"
+            }
         }
     ],
     "Music": [
         {
             "question": "What band had a hit with the song 'I Gotta Feeling'?",
             "correct_answer": "B",
-            "answers": [
-                {
-                    "A": "Coldplay",
-                    "B": "The Black Eyed Peas",
-                    "C": "Linkin Park",
-                    "D": "Foo Fighters"
-                }
-            ]
+            "answers": {
+                "A": "Coldplay",
+                "B": "The Black Eyed Peas",
+                "C": "Linkin Park",
+                "D": "Foo Fighters"
+            }
         },
         {
             "question": "Who is the lead singer of the band Coldplay?",
             "correct_answer": "A",
-            "answers": [
-                {
-                    "A": "Chris Martin",
-                    "B": "Jonny Buckland",
-                    "C": "Guy Berryman",
-                    "D": "Will Champion"
-                }
-            ]
+            "answers": {
+                "A": "Chris Martin",
+                "B": "Jonny Buckland",
+                "C": "Guy Berryman",
+                "D": "Will Champion"
+            }
         },
         {
             "question": "What is the name of the lead singer of the band Muse?",
             "correct_answer": "C",
-            "answers": [
-                {
-                    "A": "Matt Bellamy",
-                    "B": "Chris Wolstenholme",
-                    "C": "Matt Bellamy",
-                    "D": "Dominic Howard"
-                }
-            ]
+            "answers": {
+                "A": "Matt Bellamy",
+                "B": "Chris Wolstenholme",
+                "C": "Matt Bellamy",
+                "D": "Dominic Howard"
+            }
         },
         {
             "question": "What is the name of the lead singer of the band Muse?",
             "correct_answer": "C",
-            "answers": [
-                {
-                    "A": "Matt Bellamy",
-                    "B": "Chris Wolstenholme",
-                    "C": "Matt Bellamy",
-                    "D": "Dominic Howard"
-                }
-            ]
+            "answers": {
+                "A": "Matt Bellamy",
+                "B": "Chris Wolstenholme",
+                "C": "Matt Bellamy",
+                "D": "Dominic Howard"
+            }
         },
         {
             "question": "What is the name of the lead singer of the band Muse?",
             "correct_answer": "C",
-            "answers": [
-                {
-                    "A": "Matt Bellamy",
-                    "B": "Chris Wolstenholme",
-                    "C": "Matt Bellamy",
-                    "D": "Dominic Howard"
-                }
-            ]
+            "answers": {
+                "A": "Matt Bellamy",
+                "B": "Chris Wolstenholme",
+                "C": "Matt Bellamy",
+                "D": "Dominic Howard"
+            }
         }
     ]
 }
