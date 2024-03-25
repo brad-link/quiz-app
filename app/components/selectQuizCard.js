@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Styles from './selectQuizCard.module.css'
 import Link from "next/link"
 import ProgressBar from "./progressBar";
@@ -8,13 +8,24 @@ import ProgressBar from "./progressBar";
 
 export default function SelectQuizCard(Quiz) {
     const title = Quiz.title;
+    const quizKey = `quiz-${title}`;
+    const [active, setActive] = useState(() => {
+        const answers = JSON.parse(localStorage.getItem(quizKey) || '[]');
+        return answers.length > 0;
+    });
 
     return (
         <div className={Styles.selectCard}>
-            <Link href={`/${title}`}>
+            <Link className={Styles.link} href={`/${title}`}>
                 <img src={Quiz.image} alt={Quiz.title} />
-                <h1>{Quiz.title}</h1>
-                <ProgressBar title={title} quizData={Quiz.questions} />
+                <div className={Styles.info}>
+                    <h1>{Quiz.title}</h1>
+                    {active && <>
+                        <p>Continue Quiz</p>
+                        <ProgressBar title={title} quizData={Quiz.questions} />
+                    </>
+                    }
+                </div>
             </Link>
         </div>
     )

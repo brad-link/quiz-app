@@ -14,10 +14,10 @@ export default async function Home() {
     <div className={styles.startPage}>
       <h1>Select a quiz</h1>
       <div className={styles.selectCard}>
-        <SelectQuizCard title="General Knowledge" image="/star-wars.jpg" questions={quizData["General Knowledge"]} />
-        <SelectQuizCard title="Films" image="/star-wars.jpg" questions={quizData["Films"]} />
-        <SelectQuizCard title="Sports" image="/star-wars.jpg" questions={quizData["Sports"]} />
-        <SelectQuizCard title="Music" image="/star-wars.jpg" questions={quizData["Music"]} />
+        <SelectQuizCard title="General Knowledge" image="/general knowledge.webp" questions={quizData["General Knowledge"]} />
+        <SelectQuizCard title="Films" image="/films.webp" questions={quizData["Films"]} />
+        <SelectQuizCard title="Sports" image="/sports.webp" questions={quizData["Sports"]} />
+        <SelectQuizCard title="Music" image="/music.webp" questions={quizData["Music"]} />
       </div>
     </div>
   );

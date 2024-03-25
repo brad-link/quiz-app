@@ -1,13 +1,14 @@
 'use client'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
+import Styles from './questionCard.module.css'
+import ProgressBar from "@/app/components/progressBar";
 
 export default function QuestionCard({ quizKey, Question, nextQuestion }) {
     const answerKey = ['A', 'B', 'C', 'D'];
     const [currentAnswers, setCurrentAnswers] = useState([]);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     useEffect(() => {
-        localStorage.removeItem(quizKey);
         console.log(quizKey);
         const answers = JSON.parse(localStorage.getItem(quizKey) || '[]');
         console.log(JSON.parse(localStorage.getItem(quizKey)));
@@ -37,17 +38,19 @@ export default function QuestionCard({ quizKey, Question, nextQuestion }) {
         }
     }
     return (
-        <div>
-            <h3>{Question.question}</h3>
-            {answerKey.map((key) => (
-                <div key={key}>
-                    <input type="radio" id={key} checked={selectedAnswer === key} onChange={optionSelected} value={key} name="option" />
-                    <label htmlFor={key}>{Question.answers[key]}</label>
-                </div>
-            ))}
+        <div className={Styles.questionCard}>
+            {/* <ProgressBar quizKey={quizKey} /> */}
+            <h3 className={Styles.question}>{Question.question}</h3>
+            <div className={Styles.options}>
+                {answerKey.map((key) => (
+                    <div className={Styles.answer} key={key}>
+                        <input type="radio" id={key} checked={selectedAnswer === key} onChange={optionSelected} value={key} name="option" />
+                        <label htmlFor={key}>{Question.answers[key]}</label>
+                    </div>
+                ))}
+            </div>
 
-
-            <button onClick={checkAnswer}>Next</button>
+            <button className={Styles.next} onClick={checkAnswer}>Next question</button>
 
         </div>
     )
