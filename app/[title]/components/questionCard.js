@@ -39,7 +39,6 @@ export default function QuestionCard({ quizKey, Question, nextQuestion }) {
     }
     return (
         <div className={Styles.questionCard}>
-            {/* <ProgressBar quizKey={quizKey} /> */}
             <h3 className={Styles.question}>{Question.question}</h3>
             <div className={Styles.options}>
                 {answerKey.map((key) => (

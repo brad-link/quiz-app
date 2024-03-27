@@ -73,13 +73,13 @@
             }
         },
         {
-            "question": "What is the name of the skyscraper in Die Hard?",
+            "question": "What was the first movie in the Marvel Cinematic universe?",
             "correct_answer": "B",
             "answers": {
-                "A": "Nakatomi Plaza",
-                "B": "Nakatomi Plaza",
-                "C": "Nakatomi Plaza",
-                "D": "Nakatomi Plaza"
+                "A": "The Avengers",
+                "B": "Iron Man",
+                "C": "Batman",
+                "D": "Spider-Man"
             }
         },
         {
@@ -93,13 +93,13 @@
             }
         },
         {
-            "question": "What is the name of the actor who plays the character of Harry Potter?",
-            "correct_answer": "A",
+            "question": "Whic film did Leonardo Dicaprio win an Oscar for best actor?",
+            "correct_answer": "C",
             "answers": {
-                "A": "Daniel Radcliffe",
-                "B": "Rupert Grint",
-                "C": "Tom Felton",
-                "D": "Matthew Lewis"
+                "A": "Blood Diamond",
+                "B": "Wolf of Wall Street",
+                "C": "The Revenant",
+                "D": "Titanic"
             }
         }
     ],
@@ -125,13 +125,13 @@
             }
         },
         {
-            "question": "What is the diameter of a basketball hoop in inches?",
-            "correct_answer": "A",
+            "question": "Which country became the first team to win 4 Rugby Union World Cups?",
+            "correct_answer": "C",
             "answers": {
-                "A": "18 inches",
-                "B": "20 inches",
-                "C": "16 inches",
-                "D": "22 inches"
+                "A": "New Zealand",
+                "B": "England",
+                "C": "South Africa",
+                "D": "Australia"
             }
         },
         {
@@ -145,13 +145,13 @@
             }
         },
         {
-            "question": "What is the diameter of a basketball hoop in inches?",
-            "correct_answer": "A",
+            "question": "Which boxer did Muhammad Ali fight in Rumble in the Jungle?",
+            "correct_answer": "B",
             "answers": {
-                "A": "18 inches",
-                "B": "20 inches",
-                "C": "16 inches",
-                "D": "22 inches"
+                "A": "Mike Tyson",
+                "B": "George Foreman",
+                "C": "Lennox Lewis",
+                "D": "Joe Frazier"
             }
         }
     ],
@@ -187,23 +187,23 @@
             }
         },
         {
-            "question": "What is the name of the lead singer of the band Muse?",
-            "correct_answer": "C",
+            "question": "Bayonce was a member of which group before starting a solo career?",
+            "correct_answer": "D",
             "answers": {
-                "A": "Matt Bellamy",
-                "B": "Chris Wolstenholme",
-                "C": "Matt Bellamy",
-                "D": "Dominic Howard"
+                "A": "TLC",
+                "B": "The Black Eyed Peas",
+                "C": "The fugees",
+                "D": "Destiny's Child"
             }
         },
         {
-            "question": "What is the name of the lead singer of the band Muse?",
+            "question": "What band sings the song Our House?",
             "correct_answer": "C",
             "answers": {
-                "A": "Matt Bellamy",
-                "B": "Chris Wolstenholme",
-                "C": "Matt Bellamy",
-                "D": "Dominic Howard"
+                "A": "The Beatles",
+                "B": "The Rolling Stones",
+                "C": "Madness",
+                "D": "The Who"
             }
         }
     ]

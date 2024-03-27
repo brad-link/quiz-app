@@ -9,10 +9,14 @@ import ProgressBar from "./progressBar";
 export default function SelectQuizCard(Quiz) {
     const title = Quiz.title;
     const quizKey = `quiz-${title}`;
-    const [active, setActive] = useState(() => {
-        const answers = JSON.parse(localStorage.getItem(quizKey) || '[]');
-        return answers.length > 0;
-    });
+    const [active, setActive] = useState(false);
+
+    useEffect(() => {
+        setActive(() => {
+            const answers = JSON.parse(localStorage.getItem(quizKey) || '[]');
+            return answers.length > 0;
+        });
+    }, [quizKey]);
 
     return (
         <div className={Styles.selectCard}>
