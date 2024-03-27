@@ -9,14 +9,15 @@ import CancelIcon from '@mui/icons-material/Cancel';
 export default function Quiz({ title, quiz }) {
     console.log(title);
     const quizKey = `quiz-${title}`;
-    const [currentQuestion, setCurrentQuestion] = useState(() => {
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [iscompleted, setCompleted] = useState(false);
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
         const answers = JSON.parse(localStorage.getItem(quizKey) || '[]');
-        return answers.length;
-    });
-    const [iscompleted, setCompleted] = useState(() => {
-        const answers = JSON.parse(localStorage.getItem(quizKey) || '[]');
-        return answers.length === quiz.length;
-    });
+        setCurrentQuestion(answers.length);
+        setCompleted(answers.length === quiz.length);
+        setLoading(false);
+    }, [quizKey, quiz.length]);
 
     const nextQuestion = () => {
         if (currentQuestion < quiz.length - 1) {
@@ -42,21 +43,26 @@ export default function Quiz({ title, quiz }) {
         setCurrentQuestion(0);
         setCompleted(false);
     }
-    return (
-        <>
-            <div className={styles.quiz}>
-                {iscompleted ? (
-                    <div className={styles.completedCard}>
-                        <h1>Quiz Completed</h1>
-                        {checkScore()}
-                        <button className={styles.restart} onClick={() => restart()}>Retake Quiz</button>
-                    </div>
-                )
-                    :
 
-                    <QuestionCard quizKey={quizKey} Question={quiz[currentQuestion]} nextQuestion={nextQuestion} />
-                }
-            </div>
-        </>
-    )
+    if (loading) {
+        return <h1 className={styles.loading}>Loading...</h1>
+    } else
+        return (
+            <>
+
+                <div className={styles.quiz}>
+                    {iscompleted ? (
+                        <div className={styles.completedCard}>
+                            <h1>Quiz Completed</h1>
+                            {checkScore()}
+                            <button className={styles.restart} onClick={() => restart()}>Retake Quiz</button>
+                        </div>
+                    )
+                        :
+
+                        <QuestionCard quizKey={quizKey} Question={quiz[currentQuestion]} nextQuestion={nextQuestion} />
+                    }
+                </div>
+            </>
+        )
 }
